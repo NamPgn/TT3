@@ -1,0 +1,59 @@
+.time_line{
+    margin: 20px 0;
+    border-bottom: 10px;
+}
+.m{
+    border-left: 3px solid #fff;
+}
+.time_line::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    background-color: #fff;
+}
+.conten h1{
+    line-height: 30px;
+}
+.border{
+    border-bottom: 3px solid #fff;
+    width: 200px;
+}
+.khoahoc_{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    object-fit: cover;
+    background-image: url("/main/khoanhat_icon/12.png");
+}
+.khoahoc_{
+    padding: 20px;
+}
+.conten_text h1{
+letter-spacing: 2px;
+}
+.gv_text ul li{
+    font-size: 10px;
+}
+.border_{
+    margin-right: 5px;
+    border-right: 3px solid #A0181A ;
+}
+.ds ul li{
+    list-style-type: disc;
+}
+
+.ft_logo{
+    max-width: 100px;
+
+}
+.ft_logo img{
+    width: 100%;
+}
+.f{
+    max-width: 100px;
+}
