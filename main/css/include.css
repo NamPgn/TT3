@@ -2804,7 +2804,7 @@ html.cÅ© .wbox[rows]:after {
 .gr_cl_5{
     grid-template-columns: repeat(5,1fr);
 }
-.gr_cl_4{
+.gr_cl_4_{
     grid-template-columns: repeat(4,1fr);
 }
 .fsh1 {

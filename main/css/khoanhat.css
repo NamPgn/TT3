@@ -19,6 +19,7 @@
 .conten h1{
     line-height: 30px;
 }
+
 .border{
     border-bottom: 3px solid #fff;
     width: 200px;
@@ -56,4 +57,107 @@ letter-spacing: 2px;
 }
 .f{
     max-width: 100px;
+}
+@media(min-width:425px){
+    body{
+        font-size: 10px;
+    }
+    .dib{
+        margin: 9px 5px;
+        font-size: 10px;
+    }
+    .wmx1{
+        max-width: 79px !important;
+    }
+    .gr_cl_4_{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .h1_,.giangvien {
+        display: none !important;
+    }
+    .tt_home {
+        display: none;
+    }
+    .dn{
+        display: block !important;
+    }
+    .w20{
+        width: 30% !important;
+    }
+    .fs_20 {
+        font-size: 25px !important; 
+    }
+    .text_k{
+        width: auto !important;
+    }
+    .w40,.w60 {
+        width: auto;
+    }
+    .vh_{
+        width: 100% !important;
+    }
+    footer{
+        display: flex;
+    }
+}
+@media(min-width:768px){
+    body{
+        font-size: 11px;
+    }.tt_home{
+        display: block;
+    }
+    .giangvien {
+        display: block !important;
+    }
+    .dib{
+        margin: 9px 5px;
+        font-size: 10px;
+    }
+    .text_k{width: 100% !important;}
+    .df{ display: flex !important;}
+    .vh_{
+        width: 41.66666667%;
+    }
+    .dn{
+        display: none;
+    }
+    .wmx1{
+        max-width: 300px !important;
+    }
+    .gr_cl_4_{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .h1_{
+        display: none !important;
+    }
+    .w20{
+        width: 30% !important;
+    }
+    .fs_20 {
+        font-size: 15px !important; 
+    }
+}
+@media(min-width:1024px){
+    body{
+        font-size: 13px;
+    }
+    .dib{
+        margin: 9px 12px;
+        font-size: 13px;
+    }
+    .wmx1{
+        max-width: 200px !important;
+    }
+    .gr_cl_4_{
+        grid-template-columns: repeat(4,1fr) !important;
+    }
+    .h1_{
+        display: block !important;
+    }
+    .w20{
+        width: 20% !important;
+    }
+    .fs_20{
+        font-size: 20px!important;
+    }
 }

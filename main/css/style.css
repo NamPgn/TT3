@@ -61,9 +61,7 @@
 .cpi:hover{
     text-decoration:underline ;
 }
-.dib{
-    margin: 20px 40px;
-}
+
 .trs{
     transform: translateY(-100%);
 }

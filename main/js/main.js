@@ -1,7 +1,13 @@
+import banner_kh from "../component/banner_kh.js";
 import header from "../component/header.js";
+import header_kh from "../component/header_khoanhat.js";
+import ft_kh from "../component/footer_kh.js";
 var header_ = document.querySelector('.header__');
+
 var menu = document.querySelector('.menu');
-header_.innerHTML = header.render();
+if(header_){
+    header_.innerHTML = header.render();    
+}
 
 var d1 = {
     menu: ["Tin tức", "Đào tạo", "Liên kết"],
@@ -95,7 +101,8 @@ var number = document.querySelector('.number');
 var đàoTạo_=document.querySelector('.dt_conten');
 function read() {
     d1.banner_blog.map(function (item) {
-        banner_blog.innerHTML += `
+        if(banner_blog){
+            banner_blog.innerHTML += `
             <div class="news_conten relative df gap_20 ">
                 <div class="news_img btn col-sm-6 col-lg-6">
                     <img class="w1 h1 òc" src="${item.image}" alt=""> 
@@ -109,23 +116,27 @@ function read() {
             </div>
         </div>
         `
+        }
     }),
 
         d1.number.map(function (item) {
+           if(number){
             number.innerHTML += `
-        <div class="number_conten df aic  bd3 jcsa">
-        <div class="number_icon wmx150 col-sm-4 col-md-4 col-xs-4 col-lg-4 fni">
-            <img class="w1 cpi ofc" src="${item.icon}" alt="">
-        </div>
-        <div class="number_title col-xs-8 ">
-            <h1 class="tac fs_40 cpi" style="color: #0C8144; ">${item.phầnTrăm}</h1>
-            <h4 class="tac cpi" style="color: #0C8144; margin-top: 8px ;">${item.text}</h4>
-        </div>
-        </div>
-        `
+            <div class="number_conten df aic  bd3 jcsa">
+            <div class="number_icon wmx150 col-sm-4 col-md-4 col-xs-4 col-lg-4 fni">
+                <img class="w1 cpi ofc" src="${item.icon}" alt="">
+            </div>
+            <div class="number_title col-xs-8 ">
+                <h1 class="tac fs_40 cpi" style="color: #0C8144; ">${item.phầnTrăm}</h1>
+                <h4 class="tac cpi" style="color: #0C8144; margin-top: 8px ;">${item.text}</h4>
+            </div>
+            </div>
+            `
+           }
         }),
         d1.đàoTạo.map(function(i){
-            đàoTạo_.innerHTML+=`
+            if(đàoTạo_){
+                đàoTạo_.innerHTML+=`
             <div class="dt_item relative">
             <div class="dt_img ">
                 <img class="h250 w1  cpi" style="object-fit: cover;"
@@ -134,15 +145,31 @@ function read() {
                 <div class="h3 pa tt t50 l50 cl_fff fs_25 cpi w1 tac ">${i.text}</div>
             </div>
             `
+            }
         })
 }
 read();
 
+
+
+const header_kh_conten=document.querySelector('.main_menu');
+header_kh_conten.innerHTML=header_kh.render();
+var baner_kh_conten=document.querySelector('.container');
+baner_kh_conten.innerHTML=banner_kh.render();
+var ft_kh_=document.querySelector('.ft_kh').innerHTML=ft_kh.render();
+
+
 var clicked=document.querySelector('.clicked');
 var trs=document.querySelector('.trs');
-clicked.addEventListener('click',function(){
-    trs.classList.add('active_clicked');
-})
-var close=document.querySelector('.close').addEventListener('click',function(){
-    trs.classList.remove('active_clicked');
-})
+if(clicked){
+    clicked.addEventListener('click',function(){
+        trs.classList.add('active_clicked');
+        console.log('phạm giang nam');
+    })
+}
+var close=document.querySelector('.close')
+if(close){
+    close.addEventListener('click',function(){
+        trs.classList.remove('active_clicked');
+    })
+}
